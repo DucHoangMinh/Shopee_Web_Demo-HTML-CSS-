@@ -1,0 +1,16 @@
+#header {
+    width: 100%;
+    min-height: 100px;
+    background-color: #fb5731;
+}
+#header .header-navigation {
+    display: flex;
+}
+#header .navigation-left {
+    justify-self: flex-start;
+    display: inline-block;
+}
+#header .navigation-right {
+    justify-self: flex-end;
+    display: inline-block;
+}

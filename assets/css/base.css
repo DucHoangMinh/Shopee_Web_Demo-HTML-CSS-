@@ -18,3 +18,14 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
+
+.display-flex{
+    display: flex;
+}
+.remove-list-style{
+    list-style: none;
+}
+
+.white-color{
+    color: #fff;
+}
