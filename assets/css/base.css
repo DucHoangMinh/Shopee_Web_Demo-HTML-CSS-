@@ -25,6 +25,9 @@ html {
 .remove-list-style{
     list-style: none;
 }
+.remove-anchor-style{
+    text-decoration: none;
+}
 
 .white-color{
     color: #fff;
