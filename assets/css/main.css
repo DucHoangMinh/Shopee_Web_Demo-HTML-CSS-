@@ -33,6 +33,57 @@
     font-size: 13px;
     color : #fff;
 }
+
+#header .link-to-store {
+    background-color: #fff;
+    width: 186px;
+    display: block;
+    padding: none !important;
+    position: absolute;
+    /* margin-top:12px; */
+    display: none;
+    cursor: pointer;
+}
+#header .qr-code-area {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top:8px;
+}
+#header .qr-code {
+    width: 170px;
+    /* height: 170px; */
+    padding: none;
+}
+#header .google-play-app-store-area {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+#header .google-play ,
+#header .app-store{
+    height: 16px;
+}
+
+#header .hover-to-store:hover .link-to-store{
+    display: block;
+}
+
+#header .notification-box-area {
+    background-color: #fff;
+    position: absolute;
+    right: 0px;
+    width: 404px;
+}
+#header .notification-box-area h1 {
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+    user-select: none;   
+}
+
 #header .navigation-left li:nth-child(2){
     border-left: 1px solid #ccc;
 }
