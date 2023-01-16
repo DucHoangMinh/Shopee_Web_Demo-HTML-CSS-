@@ -75,13 +75,45 @@
     right: 0px;
     width: 404px;
 }
-#header .notification-box-area h1 {
+#header .notification-box-head {
+    border-bottom: 1px solid #ccc;
+}
+#header .notification-box-head h1 {
     color: #999;
     margin: 0 0 0 12px;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 40px;
     user-select: none;   
+}
+#header .notification-content-item {
+    display: flex;
+    padding : 12px;
+    box-sizing: border-box;
+    margin: 8px 0px 12px 0px;
+}
+#header .notification-box-area img {
+    width: 48px;
+    object-fit: contain;
+}
+#header .notification-item-description {
+    margin-left: 12px;
+}
+#header .notification-item-description h2 {
+    display: block;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin: none;
+    margin: 4px 0px 0px 0px;
+}
+#header .notification-item-description p{
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #756F6E;
+    margin: 0px;
 }
 
 #header .navigation-left li:nth-child(2){
