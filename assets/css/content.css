@@ -1,0 +1,15 @@
+#content {
+    /* min-height: 500px; */
+    padding-top: 36px;
+    background-color: #ccc;
+}
+#content .content-area{
+    min-height: 500px;
+    position: relative;
+}
+#content .content-product-area{
+    min-width:83.3333%;
+    position: absolute;
+    right: 0px;
+    background-color: #fff;
+}
