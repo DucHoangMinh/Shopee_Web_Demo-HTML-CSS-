@@ -1,7 +1,7 @@
 #content {
     /* min-height: 500px; */
     padding-top: 36px;
-    background-color: #ccc;
+    background-color: #fff;
 }
 #content .content-area{
     min-height: 500px;
@@ -11,5 +11,86 @@
     min-width:83.3333%;
     position: absolute;
     right: 0px;
+    background-color: #fff;
+}
+#content .content-product-filter{
+    display: flex;
+    align-items: center;
+    padding: 12px 22px;
+    border-radius: 2px;
+    background-color: #ebebeb;  
+    box-sizing: border-box;
+}
+#content .product-filter-title{
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #555;
+    margin-right: 16px;
+    height: 34px;
+    align-items: center;
+    display: flex;
+}
+#content .content-product-filter button{
+    margin-right: 12px;
+    font-size: 1.5rem !important;
+}
+#content .product-price-order-filter {
+    background-color: #fff;;
+    align-items: center;
+    display: flex;
+    min-width: 200px;
+    justify-content: space-between;
+    height: 34px;
+    cursor: pointer;
+    /* position:relative; */
+}
+#content .product-price-order-choices{
+    position: relative;
+}
+#content .product-price-order-filter p {
+    font-size: 1.4rem;
+    padding-left: 12px;
+}
+#content .product-price-order-filter i {
+    font-size: 1.4rem;
+    float: right;
+    padding-right: 12px;
+}
+#content .on-page-number{
+    margin-right: 22px;
+}
+#content .on-page-number span {
+    font-size: 1.5rem;
+}
+#content .product-filter-page {
+    display: flex;
+    margin-left: auto;
+}
+#content .filter-page-control{
+    height: 34px;
+    display: flex;
+    width: 72px;
+    border-radius: 2px;
+    margin-left: auto;
+}
+#content .filter-page-control-back,
+#content .filter-page-control-next{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    cursor: pointer;
+}
+#content .filter-page-control i{
+    font-size: 1.4rem;
+}
+#content .filter-page-control-back{
+    background-color: #f9f9f9;
+    border-right: 1px solid #eee;
+}
+#content .filter-page-control-back i{
+    color:#ccc;
+}
+#content .filter-page-control-next{
     background-color: #fff;
 }
