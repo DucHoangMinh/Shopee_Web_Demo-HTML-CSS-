@@ -19,6 +19,13 @@ button{
     justify-content: center;
     line-height: 1.6rem;
 }
+.clearfix:after{
+    clear: both;
+    content: ".";
+    display: block;
+    width: 0px;
+    height: 0px;
+}
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -48,4 +55,8 @@ button{
 
 .white-color{
     color: #fff;
+}
+
+.status-activated {
+    color: #fb5731 !important;
 }
