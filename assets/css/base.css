@@ -33,7 +33,9 @@ button{
     display: flex;
     flex-wrap: wrap;
 }
-
+.no-margin {
+    margin : 0px;
+}
 .display-flex{
     display: flex;
 }
