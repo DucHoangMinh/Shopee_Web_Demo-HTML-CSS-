@@ -52,6 +52,12 @@ button{
 .remove-anchor-style{
     text-decoration: none;
 }
+.remove-cursor-effect {
+    cursor: initial;
+}
+.higher-item{
+    z-index: 1;
+}
 
 .white-color{
     color: #fff;
