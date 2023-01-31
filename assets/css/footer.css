@@ -54,4 +54,13 @@
 }
 #footer .footer-end{
     background-color: #f5f5f5;
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 36px;
+}
+#footer .footer-end-content {
+    color:#737373;
+    font-size: 1.2rem;
+    margin:8px;
 }
