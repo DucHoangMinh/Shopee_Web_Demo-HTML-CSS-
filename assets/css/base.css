@@ -20,6 +20,8 @@ html {
 }
 :root {
     --white-color : #fff;
+    --primary-color: #ee4d2d;
+    --text-color: #000;
 }
 
 /* ANIMATION */
