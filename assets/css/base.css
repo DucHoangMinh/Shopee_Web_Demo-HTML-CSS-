@@ -23,6 +23,10 @@ html {
     --primary-color: #ee4d2d;
     --text-color: #000;
     --border-color: #dbdbdb;
+
+    --navbar-height: 34px;
+    --header-height: 120px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 /* ANIMATION */
@@ -32,6 +36,15 @@ html {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes grow{
+    from {
+        transform: scale(var(--grow-from));
+    }
+    to {
+        transform: scale(var(--grow-to));
     }
 }
 
@@ -50,6 +63,7 @@ html {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    animation: fadeIn linear 0.2s;
 }
 .modal__body{
     /* width: 300px;
@@ -58,6 +72,9 @@ html {
     margin: auto;
     border-radius: 5px;
     position: relative;
+    --grow-from: 0.7;
+    --grow-to : 1;
+    animation: grow ease-in 0.2s;
 }
 
 /* BUTTON STYLE */
@@ -68,7 +85,6 @@ html {
     border: none;
     border-radius: 2px;
     font-size: 1.4rem;
-    background-color: var(--white-color);
     cursor: pointer;
     display: flex;
     justify-content: center;
