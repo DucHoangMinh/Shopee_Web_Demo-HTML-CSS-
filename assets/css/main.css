@@ -22,6 +22,9 @@
     display: flex;
     position: relative;
 }
+.header__navbar-user:hover .header__navbar-user-menu{
+    display: block;
+}
 .header__navbar-user-avatar{
     width: 22px;
     height: 22px;
@@ -29,13 +32,13 @@
     border: 1px solid rgba(0,0,0,0.2);
 }
 .header__navbar-user-name{
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.4rem;
     font-weight: 400;
 }
 .header__navbar-user-menu{
     position: absolute;
-    top: 100%;
+    top: calc(100% + 4px);
     padding-left: 0px;
     right: 0px;
     background-color: var(--white-color);
@@ -44,10 +47,21 @@
     z-index: 1;
     width: 160px;
     box-shadow: 0 1px 3.125rem 0 rgba(0,0,0,0.2);
-
+    display: none;
+}
+.header__navbar-user-menu::before{
+    content: "";
+    border: 15px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -22px;
+    right: 32px;
 }
 .header__navbar-user-menu-item{
 
+}
+.header__navbar-user-menu-item--separate{
+    border-top: 1px solid #dedada;
 }
 .header__navbar-user-menu-item a{
     text-decoration: none;
@@ -55,6 +69,14 @@
     font-size: 1.4rem;
     padding: 8px 16px;
     display: block;
+}
+.header__navbar-user-menu-item a:first-child{
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+.header__navbar-user-menu-item a:last-child{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 .header__navbar-user-menu-item a:hover{
     background-color: #fafafa;
@@ -66,7 +88,7 @@
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -94,6 +116,9 @@
     color: var(--white-color);
     text-decoration: none;
 }
+.header__navbar-icon-link:nth-child(2){
+    margin-left: 3px;
+}
 .header__navbar-item,
 .header__navbar-item-link,
 .header__navbar-icon-link{
@@ -119,7 +144,7 @@
     top: 100%;
     border-radius: 2px;
     display: none;
-    animation: fadeIn ease 1s;
+    animation: fadeIn ease 0.2s;
 }
 .header__qr::before{
     content: "";
@@ -158,12 +183,13 @@
     width: 404px;
     background-color: var(--white-color);
     right: 0px;
-    border: 1px solid #d3d3d3;
+    border: 1px solid rgba(0,0,0,0.1);
     cursor: default;
     animation: headerNotiGrow ease-in 0.25s;
     transform-origin: calc(100% - 32px) top;
     display: none;
     z-index: 1;
+    border-radius: 2px;
 }
 .header__notify::before{
     content: "";
