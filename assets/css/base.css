@@ -4,6 +4,8 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+/* Chuẩn bị cho Responsive */
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -14,10 +16,25 @@ html {
     width : 100%;
 }
 
-.grid__round {
+.grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
+
+/* Css test,đến khi responsive nếu cần sẽ sửa */
+.grid__column-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+.grid__column-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3333%;
+}
+
 :root {
     --white-color : #fff;
     --primary-color: #ee4d2d;
@@ -86,7 +103,7 @@ html {
     border-radius: 2px;
     font-size: 1.4rem;
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     padding : 0 8px;
