@@ -47,7 +47,7 @@ html {
     --primary-color: #ee4d2d;
     --text-color: #000;
     --border-color: #dbdbdb;
-
+    --gold-star:#ffce3e;
     --navbar-height: 34px;
     --header-height: 120px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
