@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/fontawesome-free-6.2.1-web/css/all.css">
+    <script src="./assets/source.js"></script>
 </head>
 <body>
     <div class="app">
@@ -96,11 +97,11 @@
                             </a>
                         </li>
                         <!-- Trong trường hợp chưa log in thì hiển thị Đăng Ký Đăng nhập -->
-                        <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li> -->
+                        <li onclick="registerForm()" for="resgister_form_control" class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng ký</li>
+                        <li onclick="loginForm()" class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
 
                         <!-- Trong trường hợp đã đăng nhập rồi,hiển trị thông tin user -->
-                        <li class="header__navbar-item header__navbar-user">
+                        <!-- <li class="header__navbar-item header__navbar-user">
                             <img src="./assets/photos/avatar/img_blank_avatar.png" alt="" class="header__navbar-user-avatar">
                             <span class="header__navbar-user-name">
                                 Hoàng Minh Đức
@@ -119,7 +120,7 @@
                                     <a href="#">Đăng xuất</a>
                                 </li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
                 <div class="header-with-search">
@@ -831,17 +832,16 @@
     </div>
 
     <!-- Modal layout -->
-    <!-- <div class="modal">
-        <div class="modal__overlay">
-        </div> -->
-        <!-- Register Form -->
-        <!-- <div class="modal__body">
+    <div class="modal" id="modal_modal">
+        <div class="modal__overlay" onclick="closeForm()" id="modal__overlay_id">
+        </div>
+        <div class="modal__body register_form" id="register__form_id">
             <div class="modal__inner">
                 <div class="auth-form">
                     <div class="auth-form__container">
                         <div class="auth-form__header">
                             <h3 class="auth-form__heading">Đăng ký</h3>
-                            <span class="auth-form__switch-button">Đăng nhập</span>
+                            <span onclick="loginForm()" class="auth-form__switch-button">Đăng nhập</span>
                         </div>
                         <div class="auth-form__form">
                             <div class="auth-form__group">
@@ -883,17 +883,16 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
-        <!-- Login form -->
-        <!-- <div class="modal__body login__form">
+        <div class="modal__body login__form" id="login__form_id">
             <div class="modal__inner">
                 <div class="auth-form">
                     <div class="auth-form__container">
                         <div class="auth-form__header">
                             <h3 class="auth-form__heading">Đăng nhập</h3>
-                            <span class="auth-form__switch-button">Đăng ký</span>
+                            <span onclick="registerForm()" class="auth-form__switch-button">Đăng ký</span>
                         </div>
                         <div class="auth-form__form">
                             <div class="auth-form__group">
@@ -933,7 +932,31 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </div>
+    <script>
+        var modalManage = document.getElementById('modal_modal');
+        var modalOverlay = document.getElementById('modal__overlay_id');  
+        var registerFormControl = document.getElementById('register__form_id');
+        var loginFormControl = document.getElementById('login__form_id');
+        function registerForm() {
+            modalManage.style.display='flex';
+            registerFormControl.style.display = 'block';
+            loginFormControl.style.display = 'none';
+        }
+
+        function loginForm() {
+            modalManage.style.display='flex';
+            loginFormControl.style.display = 'block';
+            registerFormControl.style.display = 'none';
+        }
+
+        function closeForm() {
+            modalManage.style.display = 'none';
+            loginFormControl.style.display = 'none';
+            registerFormControl.style.display = 'none';
+        }
+
+    </script>
 </body>
 </html>

@@ -17,7 +17,6 @@
     margin: 0px 8px;
     position: relative;
 }
-
 .header__navbar-user{
     display: flex;
     position: relative;
@@ -281,6 +280,9 @@
 }
  
 /* ===================== AUTHEN MODAL CSS =============== */
+.register_form{
+    display: none;
+}
 .auth-form{
     width: 500px;
     background-color: var(--white-color);
@@ -384,6 +386,9 @@
 }
 .auth-form__help-forgot{
     color: var(--primary-color);
+}
+.login__form {
+    display: none;
 }
 .login__form .auth-form__controls{
     margin-top: 24px;
