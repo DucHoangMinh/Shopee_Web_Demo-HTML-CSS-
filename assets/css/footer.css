@@ -1,15 +1,10 @@
 #footer {
     width : 100%;
     border-top: 5px solid #ee4d2d;
-
+    display: block;
 }
 #footer .footer-area {
     min-height: 100px;
-    display: flex;
-    justify-content: space-around;
-}
-#footer .footer-column{
-    width: 20%;
 }
 #footer .footer-h1-area h1 {
     font-size: 1.4rem;

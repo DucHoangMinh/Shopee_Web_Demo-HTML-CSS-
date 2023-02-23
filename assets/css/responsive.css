@@ -1,0 +1,46 @@
+/* Table responsive */
+@media (min-width : 740px) and (max-width : 1023px){
+    #header .header-navigation{
+        display: none;
+    }
+    #header .header-logo{
+        display: none;
+    }
+    #header .header-with-search{
+        width: 660px;
+    }
+    #header .header-search-area{
+        margin-left: 12px;
+    }
+    #header .header-cart{
+        width: 75px;
+    }
+    #content .content-product-pc-filter{
+        display: none;
+    }
+    #content .content-sidebar{
+        display: none;
+    }
+    #content .content-area{
+        width: 660px;
+    }
+    #footer .footer-area{
+        width: 660px;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width : 739px) {
+    #header .header-navigation{
+        display: none;
+    }
+    #header .header-search-area{
+        display: none;
+    }
+    #content .content-sidebar{
+        display: none;
+    }
+    #content .content-product-pc-filter{
+        display: none;
+    }
+}
