@@ -31,16 +31,58 @@
 
 /* Mobile responsive */
 @media (max-width : 739px) {
+    #header {
+        min-height: 55px;
+    }
     #header .header-navigation{
         display: none;
     }
     #header .header-search-area{
         display: none;
     }
+    #header .header-logo{
+        padding: 0px;
+        display: flex;
+    }
+    #header .header-logo img {
+        padding: 0px 12px;
+    }
+    #header .header-shopee-log{
+        width: 100%;
+        object-fit: contain;
+        position: relative;
+        top: -4px;
+    }
+    #header .header-with-search {
+        padding: 12px 0px 6px 0px;
+    }
+    #header .header__logo-img{
+        width: 110px;
+    }
     #content .content-sidebar{
         display: none;
     }
     #content .content-product-pc-filter{
         display: none;
+    }
+    #content .page-selection-area {
+        padding: 0px;
+    }
+
+    #content .page-selection-area a{
+        height: 28px;
+        font-size: 1.6rem;
+        min-width: 36px;
+    }
+    #content .page-selection-area li{
+        margin: 0px;
+    }
+    #footer .footer-area-item{
+        text-align: center;
+    }
+    #footer .footer-column-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

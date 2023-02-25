@@ -298,7 +298,7 @@
     }
 
     .l-0 {
-        display: none;
+        display: none !important;
     }
 
     .l-1,
@@ -380,6 +380,9 @@
     .l-12 {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .l-o-0 {
+        margin-left: 0%;
     }
 
     .l-o-1 {
