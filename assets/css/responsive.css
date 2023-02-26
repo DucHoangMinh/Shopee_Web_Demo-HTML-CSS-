@@ -12,8 +12,20 @@
     #header .header-search-area{
         margin-left: 12px;
     }
+    #header .header-mobile-search-logo-wrap{
+        display: none;
+    }
     #header .header-cart{
         width: 75px;
+    }
+    #header .header-mobile-sort-area{
+        display: flex;
+    }
+    #header .mobile-sort-item-link::before{
+        left: 132px;
+    }
+    #content .content-product-mobile-filter{
+        display: flex;
     }
     #content .content-product-pc-filter{
         display: none;
@@ -59,8 +71,25 @@
     #header .header__logo-img{
         width: 110px;
     }
+    #header .header-mobile-search-logo-wrap{
+        justify-content: left;
+        padding-left: 24px;
+    }
+    #header .header-cart i {
+        float: right;
+        padding-right: 24px;
+    }
+    #header .header-mobile-sort-area{
+        display: flex;
+    }
+    #content {
+        padding-top: 12px;
+    }
     #content .content-sidebar{
         display: none;
+    }
+    #content .content-product-mobile-filter{
+        display: flex;
     }
     #content .content-product-pc-filter{
         display: none;

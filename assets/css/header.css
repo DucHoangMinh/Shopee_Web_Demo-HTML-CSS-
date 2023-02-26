@@ -212,7 +212,6 @@
     font-size: 1.4rem;
 }
 #header .header-cart {
-    width: 150px;
     text-align: center;
 }
 #header .header-cart i {
@@ -225,4 +224,38 @@
     display: flex;
     justify-content: center;
 }
-
+#header .header-mobile-sort-area{
+    display: none;
+    background-color: #fff;
+    height: 46px;
+    overflow: hidden;
+}
+#header .mobile-sort-list {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    height: 100%;
+    margin: 0px;
+}
+#header .mobile-sort-item {
+    text-align: center;
+}
+#header .mobile-sort-item-link{
+    text-decoration: none;
+    color: #626161;
+    font-size: 1.4rem;
+    line-height: 46px;
+    position: relative;
+}
+#header .mobile-sort-item-link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 76px;
+    height: 140%;
+    border-left: 1px solid #aaa7a7;
+    transform: translateY(-50%);
+}
+#header .mobile-sort-item-link--active {
+    color: #fb5731;
+}

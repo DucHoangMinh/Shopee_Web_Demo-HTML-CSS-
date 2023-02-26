@@ -152,6 +152,41 @@
 #content .filter-page-control-next{
     background-color: #fff;
 }
+#content .content-product-mobile-filter{
+    display: none;
+    height: 40px;
+    padding-bottom: 24px;
+    box-sizing: initial;
+}
+#content .product-mobile-filter-list{
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+    height: 100%;
+    margin: 0px;
+    overflow-x: auto;
+}
+#content .product-mobile-filter-item{
+    text-align: center;
+    padding: 0px 5px;
+    border-radius: 4px;
+    margin: 0px 5px;
+}
+#content .product-mobile-filter-item--blue{
+    background-color: #87afd8;
+}
+#content .product-mobile-filter-item--green{
+    background-color: #88cf81;
+}
+#content .product-mobile-filter-item--turquoise{
+    background-color: #76c9bd;
+}
+#content .product-mobile-filter-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 20px;
+}
 
 
 #content .content-product-list-area{
