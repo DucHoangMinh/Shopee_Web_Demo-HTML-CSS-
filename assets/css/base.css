@@ -4,6 +4,9 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+*{
+    box-sizing: border-box;
+}
 
 /* Chuẩn bị cho Responsive */
 .grid__row {

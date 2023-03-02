@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./assets/css/fontawesome-free-6.2.1-web/css/all.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <script src="./assets/source.js"></script>
 </head>
 <body>
     <div class="app">
@@ -126,8 +125,11 @@
                     </ul>
                 </nav>
                 <div class="header-with-search">
+                    <div onclick="openMobileSearch()" class="header__mobile-search" id="header__mobile-search-icon_ID">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </div>
                     <div class="header__logo hide-on-tablet">
-                        <a href="/" class="header__logo-link">
+                        <a href="#" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
                                 <g fill-rule="evenodd">
                                     <path
@@ -137,7 +139,7 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="header__search">
+                    <div class="header__search" id="header__search_ID">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
                             
@@ -259,8 +261,8 @@
         </header>
         <div class="app__container">
             <div class="grid wide">
-                <div class="grid__row app-content">
-                    <div class="grid__column-2">
+                <div class="row sm-gutter app-content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category-heading">
                                 <i class="category-heading-icon fas fa-list"></i>
@@ -291,7 +293,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-table">
                             <span class="home-filter__label">
                                 Sắp xếp theo
@@ -331,8 +333,8 @@
                         </div>
 
                         <div class="home-product">
-                            <div class="grid__row">
-                                <div class="grid__column-2-in-column-10">
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-4 c-6">
                                     <!-- Product item -->
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/c14c987f1d53c8504d065cf6cc22508e);"></div>
@@ -369,7 +371,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://dm4fv4ltmsvz0.cloudfront.net/d7d6e19c-15e1-4f1f-9182-f49519817afe.jpeg);"></div>
                                         <h4 class="home-product-item__name">Bàn phím cơ  MONSGEEK M1 ( Vỏ nhôm / Mạch xuôi / Gasket Mount / Hotswap / RGB)</h4>
@@ -405,7 +407,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://dm4fv4ltmsvz0.cloudfront.net/70adefff-8da9-416f-b494-04b0436769af.jpeg);"></div>
                                         <h4 class="home-product-item__name">Bàn phím cơ không dây Keydous NJ81 | MẠCH XUÔI | HOTSWAP Led RGB | Type C | Bluetooth 5.0 | Wireless 2.4G</h4>
@@ -441,7 +443,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/58899_chuot_khong_day_razer_pro_click_humanscale_usb_led_trang_rz01_02990100_r3m1_0002_3.jpg);"></div>
                                         <h4 class="home-product-item__name">Chuột không dây Razer Pro Click Humanscale (USB/Led trắng) (RZ01-02990100-R3M1)</h4>
@@ -477,7 +479,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/55640_chuot_khong_day_corsair_iron_claw_rgb_usb_rgb_den_ch_9317011_ap_0001_2.jpg);"></div>
                                         <h4 class="home-product-item__name">Chuột không dây Corsair Iron claw RGB (USB/RGB/Đen) (CH-9317011-AP)</h4>
@@ -513,7 +515,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/63915_chuot_razer_basilisk_v3_rz01_04000100_r3m1_0002_3.jpg);"></div>
                                         <h4 class="home-product-item__name">Chuột Razer Basilisk V3 (RZ01-04000100-R3M1)</h4>
@@ -549,7 +551,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/70344_ban_phim_co_corsair_k95_platinum_xt_rgb_cherry_blue_switch_ch_9127411_na_5.jpg);"></div>
                                         <h4 class="home-product-item__name">Bàn phím cơ Corsair K95 Platinum XT RGB Cherry Blue switch (CH-9127411-NA)</h4>
@@ -585,7 +587,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/69852_ban_phim_co_khong_day_fuhlen_t87s_pro_white_yellow_switch_001.jpg);"></div>
                                         <h4 class="home-product-item__name">Bàn phím cơ không dây Fuhlen T87S Pro White Yellow Switch</h4>
@@ -621,7 +623,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/69247_ban_phim_co_khong_day_fl_esport_fl750_sam_marshmallow_rgb_gasket_mount_kailh_box_v2_brown_sw_usb_bluetooth_3mode_hotswap.jpg);"></div>
                                         <h4 class="home-product-item__name">Bàn phím cơ Không dây FL-Esport FL750 SAM Marshmallow RGB Gasket Mount Kailh BOX V2 Brown sw (USB/Bluetooth/3Mode/Hotswap)</h4>
@@ -657,7 +659,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/69240_ban_phim_co_khong_day_fl_esport_cmk87_sam_marshmallow_rgb_4.jpg);"></div>
                                         <h4 class="home-product-item__name">Bàn phím cơ Không dây FL-Esport CMK87 SAM Marshmallow RGB Kailh BOX Red sw (USB/Bluetooth/3Mode/Hotswap)</h4>
@@ -693,7 +695,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/58899_chuot_khong_day_razer_pro_click_humanscale_usb_led_trang_rz01_02990100_r3m1_0002_3.jpg);"></div>
                                         <h4 class="home-product-item__name">Chuột không dây Razer Pro Click Humanscale (USB/Led trắng) (RZ01-02990100-R3M1)</h4>
@@ -729,7 +731,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/55640_chuot_khong_day_corsair_iron_claw_rgb_usb_rgb_den_ch_9317011_ap_0001_2.jpg);"></div>
                                         <h4 class="home-product-item__name">Chuột không dây Corsair Iron claw RGB (USB/RGB/Đen) (CH-9317011-AP)</h4>
@@ -765,7 +767,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/63915_chuot_razer_basilisk_v3_rz01_04000100_r3m1_0002_3.jpg);"></div>
                                         <h4 class="home-product-item__name">Chuột Razer Basilisk V3 (RZ01-04000100-R3M1)</h4>
@@ -801,7 +803,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/70344_ban_phim_co_corsair_k95_platinum_xt_rgb_cherry_blue_switch_ch_9127411_na_5.jpg);"></div>
                                         <h4 class="home-product-item__name">Bàn phím cơ Corsair K95 Platinum XT RGB Cherry Blue switch (CH-9127411-NA)</h4>
@@ -837,7 +839,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-in-column-10">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="">
                                         <div class="home-product-item__img" style="background-image: url(https://hanoicomputercdn.com/media/product/69852_ban_phim_co_khong_day_fuhlen_t87s_pro_white_yellow_switch_001.jpg);"></div>
                                         <h4 class="home-product-item__name">Bàn phím cơ không dây Fuhlen T87S Pro White Yellow Switch</h4>
@@ -932,8 +934,8 @@
         </div>
         <footer class="footer">
             <div class="grid wide">
-                <div class="grid__row">
-                    <div class="grid__column-2-in-column-10">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer__list">
                             <li class="footer__list-item">
@@ -953,7 +955,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-in-column-10">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Giới thiệu</h3>
                         <ul class="footer__list">
                             <li class="footer__list-item">
@@ -970,7 +972,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-in-column-10">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Danh mục</h3>
                         <ul class="footer__list">
                             <li class="footer__list-item">
@@ -984,7 +986,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-in-column-10">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Theo dõi</h3>
                         <ul class="footer__list">
                             <li class="footer__list-item">
@@ -1004,7 +1006,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-in-column-10">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer__download">
                             <img src="./assets/photos/qr_code.png" alt="" class="footer__download-qr">
@@ -1135,6 +1137,9 @@
         var modalOverlay = document.getElementById('modal__overlay_id');  
         var registerFormControl = document.getElementById('register__form_id');
         var loginFormControl = document.getElementById('login__form_id');
+        var mobileSearch = documheader__searchent.getElementById('header__mobile-search-icon_ID');
+        var headerSearch = document.getElementById('header__search_ID');
+        var headerSearchHeight = headerSearch.clientHeight;
         function registerForm() {
             modalManage.style.display='flex';
             registerFormControl.style.display = 'block';
@@ -1152,7 +1157,14 @@
             loginFormControl.style.display = 'none';
             registerFormControl.style.display = 'none';
         }
-
+        function openMobileSearch(){
+            if(headerSearch.clientHeight !== headerSearchHeight) {
+                headerSearch.style.display = 'none';
+            }
+            else{
+                headerSearch.style.display = 'flex';
+            }
+        }
     </script>
 </body>
 </html>
