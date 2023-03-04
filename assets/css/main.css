@@ -561,6 +561,11 @@
 .header__search-select{
     border-left: 1px solid #ccc;
     padding-left: 16px;
+    position: relative;
+    cursor: pointer;
+}
+.header__search-select:hover .header__search-option{
+    display: block;
 }
 .header__search-select-label{
     font-size: 1.4rem;
@@ -571,6 +576,47 @@
     color: #948e8e;
     margin: 0 16px 0 8px;
 }
+.header__search-option{
+    position: absolute;
+    width: calc(100% - 5px);
+    background-color: var(--white-color);
+    top: 29px;
+    left: 2px;
+    list-style: none;
+    padding-left: 0px;
+    border-radius: 3px;
+    display: none;
+}
+.header__search-option::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    height: 22px;
+    top: -15px;
+}
+.header__search-option-item{
+    display: flex;
+    justify-content: space-between;
+}
+.header__search-option-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    padding: 8px 0px 8px 12px;
+    display: block;
+}
+.header__search-option-link:hover{
+    color: var(--primary-color);
+}
+.header__search-option-icon{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    padding: 8px 12px 8px 0px;
+}
+
+
+
 .header__search-btn{
     background-color: var(--primary-color);
     border: none;
@@ -788,6 +834,47 @@
     left: 8px;
     transform: translateY(-50%);
 }
+
+/* Mobile Category */
+.mobile-category{
+
+}
+.mobile-category-list{
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    max-width: 100%;
+    overflow-x: auto;
+}
+.mobile-category-list::-webkit-scrollbar{
+    display: none;
+}
+.mobile-category-item{
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+.mobile-category-item:nth-of-type(3n) .mobile-category-link{
+    background-color: #87afd8;
+}
+.mobile-category-item:nth-of-type(3n + 1) .mobile-category-link{
+    background-color: #76c9bd;
+}
+.mobile-category-item:nth-of-type(3n +2) .mobile-category-link{
+    background-color: #88cf81;
+}
+.mobile-category-link{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+    width: 110px;
+    height: 40px;
+    display: block;
+    border-radius: 4px;
+    font-weight: 300;
+}
+
 
 /* Home sort + filter */
 .home-filter{
