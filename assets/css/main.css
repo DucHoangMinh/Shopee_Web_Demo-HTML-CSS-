@@ -457,6 +457,7 @@
 }
 .header__logo{
     width: 200px;
+    -webkit-tap-highlight-color: transparent;
 }
 .header__logo-link{
     display: block;
@@ -563,6 +564,7 @@
     padding-left: 16px;
     position: relative;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 .header__search-select:hover .header__search-option{
     display: block;
@@ -837,7 +839,7 @@
 
 /* Mobile Category */
 .mobile-category{
-
+    display: none;
 }
 .mobile-category-list{
     display: flex;
@@ -873,6 +875,7 @@
     display: block;
     border-radius: 4px;
     font-weight: 300;
+    padding: 0 4px;
 }
 
 
