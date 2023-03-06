@@ -67,6 +67,7 @@
     }
     .header__cart{
         padding: 0px 12px;
+        display: none;
     }
     .header__cart-notice {
         right: 4px;
@@ -83,8 +84,7 @@
         animation: mobileSearchSideIn linear 0.4s;
         display: none;
     }
-    .header__mobile-search,
-    .header__cart
+    .header__mobile-search
     {
         display: block;
         position: relative;
@@ -112,6 +112,9 @@
         margin: 0px;
         padding-top: 8px;
     }
+    .mobile-tablet-menu-icon{
+        padding-right: 0px;
+    }
     .footer__heading{
         text-align: center;
     }
@@ -121,6 +124,10 @@
     }
     .footer__download-apps{
         flex: unset;
+    }
+    .auth-form,
+    .register_form {
+        width: 100%;
     }
     @keyframes mobileSearchSideIn {
         from {
